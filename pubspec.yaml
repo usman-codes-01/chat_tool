@@ -1,0 +1,49 @@
+name: chat_tool
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # 🔹 Firebase core (sab projects ke liye required)
+  firebase_core: ^3.6.0
+
+  # 🔹 Firebase Authentication (agar login chahiye)
+  firebase_auth: ^5.3.0
+
+  # 🔹 Cloud Firestore (chat messages store karne ke liye best)
+  cloud_firestore: ^5.4.4
+
+  # 🔹 Firebase Messaging (agar notifications chahiye to)
+  firebase_messaging: ^15.1.0
+
+  # 🔹 Firebase Storage (agar images send/store karni hain to)
+  firebase_storage: ^12.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: "^0.14.4"
+
+flutter_icons:
+  android: true
+  # ios: true
+  image_path: "images/icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+#   - images/a_dot_ham.jpeg
